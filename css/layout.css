@@ -52,7 +52,7 @@ header .banner {
    vertical-align: middle;
    margin: 0 auto;
    width: 85%;
-   padding-bottom: 30px;s
+   padding-bottom: 30px;
    text-align: center;
 }
 
@@ -143,16 +143,15 @@ header .scrolldown a:hover { color: #11ABB0; }
 .opaque { background-color: #333; }
 
 /* hide toggle button */
-#nav-wrap > a.mobile-btn { display: none; }
-
-ul#nav {
+#nav-wrap > a.navbar-brand { display: none; }
+ul#navbar-nav {
    min-height: 48px;
    width: auto;
 
    /* center align the menu */
    text-align: center;
 }
-ul#nav li {
+ul#navbar-nav li {
    position: relative;
    list-style: none;
    height: 48px;
@@ -160,7 +159,7 @@ ul#nav li {
 }
 
 /* Links */
-ul#nav li a {
+ul#navbar-nav .nav-item .nav-link {
 
 /* 8px padding top + 8px padding bottom + 32px line-height = 48px */
 
@@ -178,8 +177,8 @@ ul#nav li a {
 	transition: color .2s ease-in-out;
 }
 
-ul#nav li a:active { background-color: transparent !important; }
-ul#nav li.current a { color: #F06000; }
+ul#navbar-nav .nav-item a:active { background-color: transparent !important; }
+ul#navbar-nav li.nav-link a { color: #F06000; }
 
 
 /* ------------------------------------------------------------------ */
@@ -207,9 +206,9 @@ ul#nav li.current a { color: #F06000; }
 }
 #about .profile-pic {
    position: relative;
-   width: 120px;
-   height: 120px;
-   border-radius: 100%;
+   width: 140px;
+   height: 180px;
+   border-radius: 10%;
 }
 #about .contact-details { width: 41.66667%; }
 #about .download {
@@ -753,7 +752,7 @@ call-to-action .button {
     margin: 0 6px;
     display: inline-block;
     zoom: 1;
-    *display: inline;
+    display: inline;
 }
 .flex-control-paging li a {
     width: 12px;
@@ -999,4 +998,3 @@ footer .social-links li:first-child { margin-left: 0; }
  	border-radius: 100%;
 }
 #go-top a:hover { background-color: #0F9095; }
-
