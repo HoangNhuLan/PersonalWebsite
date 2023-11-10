@@ -175,7 +175,27 @@
       });
       return false;
    });
-
+   
+   function openCity(evt, cityName) {
+      // Declare all variables
+      var i, tabcontent_, tablinks_;
+    
+      // Get all elements with class="tabcontent" and hide them
+      tabcontent_ = document.getElementsByClassName("tabcontent_");
+      for (i = 0; i < tabcontent_.length; i++) {
+        tabcontent_[i].style.display = "none";
+      }
+    
+      // Get all elements with class="tablinks" and remove the class "active"
+      tablinks_ = document.getElementsByClassName("tablinks_");
+      for (i = 0; i < tablinks_.length; i++) {
+        tablinks_[i].className = tablinks_[i].className.replace(" active", "");
+      }
+    
+      // Show the current tab, and add an "active" class to the button that opened the tab
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
 
 });
 
