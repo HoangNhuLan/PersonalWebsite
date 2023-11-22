@@ -108,6 +108,10 @@ header .scrolldown a {
    transition: all .3s ease-in-out;
 }
 header .scrolldown a:hover { color: #11ABB0; }
+#navbar-nav a:hover{
+   background-color: orangered;
+   border-radius: 10px;
+}
 
 /* primary navigation
 --------------------------------------------------------------------- */
@@ -344,6 +348,7 @@ ul#navbar-nav li.nav-link a { color: #F06000; }
    display: block;
    margin-top: 25px;
 }
+
  
 
 /* ------------------------------------------------------------------
