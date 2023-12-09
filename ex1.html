@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UFT-8">
+      <title>Hoàng Như Lan - My Website</title>
+      <meta name="description" content="">
+      <meta name="author" content="">
+   
+      <!-- Mobile Specific Metas
+      ================================================== -->
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   
+      <!-- CSS
+       ================================================== -->
+      <link rel="stylesheet" href="css/default.css">
+      <link rel="stylesheet" href="css/layout.css">
+      <link rel="stylesheet" href="css/media-queries.css">
+      <link rel="stylesheet" href="css/magnific-popup.css">
+   
+       <!-- library font, icon -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;0,800;1,800&display=swap" rel="stylesheet">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <!-- Script
+      ================================================== -->
+      <script src="js/modernizr.js"></script>
+   
+      <!-- Favicons
+      ================================================== -->
+      <link rel="shortcut icon" href="images/logo-personal.png" >
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+
+    <body>
+         <nav id="nav-wrap">
+  
+           <a class="mobile-btn" href="#nav-wrap" title="Show navigation"></a>
+           <a class="mobile-btn" href="#" title="Hide navigation"></a>
+          <div id="navbarSupportedContent"  class="collapse navbar-collapse" >
+              <ul style="background-color: #2c292d;" id="navbar-nav" class="navbar-nav">
+                  <li class="nav-item active">
+                     <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <div class="dropdown">
+                       <button  style="background-color:#F06000";" class="dropbtn">LAB3<span class="sr-only">(current)</span> 
+                         <i class="fa fa-caret-down"></i>
+                       </button>
+                       <div class="dropdown-content">
+                         <a style="padding: 10px 0px 10px 5px; "  href="ex1.html">Ex1</a>
+                         <a style="padding: 10px 0px 10px 5px;" href="ex2.html">Ex2</a>
+                       </div>
+                     </div> 
+                 </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="lab4.html">Lab4</a></li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="contact.html">Contact</a></li>
+              </ul>
+
+           </div>
+        </nav>
+      <!-- lab4 -->
+         
+      <div style= "margin-top: 2.4%; background-color: white;">
+         <!-- Tab links -->
+         <h2 style="text-align: center; font-family:'Open Sans', sans-serif; color: brown; margin-top: 2em;" >EX1</h2>
+         <div class="tabLab">
+            <button style="color: black; font-family:'Open Sans', sans-serif;" class="tablinksLab" onclick="openCity(event, 'Design')" id="defaultOpen">Design</button>
+            <button style="color: black; font-family:'Open Sans', sans-serif;" class="tablinksLab" onclick="openCity(event, 'Implement')">Implement</button>
+         </div>
+         
+         <!-- Tab content -->
+    
+        <div id="Design" class="tabcontentLab">
+         <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+          <a id="imageLink" href="images/thietkebaiex1_lab3.png">Màn hình đã thiết kế trên HTML</a>
+          <button id="download-btn"> <i class="fa-solid fa-download"></i></button>
+          <button> <a style="text-decoration: none; color: white; font-family:'Open Sans', sans-serif;" href="https://www.figma.com/file/roWyK5TNB4iWWTUaqtKYuu/Untitled?type=design&node-id=0%3A1&mode=design&t=pY3GFWmdqcZD1T6q-1">Go to Figma</a></button>
+        </div>
+    
+        <div id="Implement" class="tabcontentLab">
+         <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+         <img style="display: block; width: 14em; height: 10em; margin-left: 70px;" src="images/logo_ex1.png" alt="">
+         <button id="btn_signup-ex1">Sign up free</button>
+         <button id="btn_login-ex1">Login</button>
+         <h3 style="display: block; margin-top: 100px; margin-left: 40px; font-weight: 800; font-size: 25px;">Top Picks For You</h3>
+         <img style="width: 20em; margin-right: 45px; margin-left: 40px;" src="images/caycamngotcuatoi_big.png" alt="caycamngotcuatoi_big"> 
+         <img style="width: 20.8em; margin-right: 45px;" src="images/thientaikedien_big.png" alt="thientaikedien_big"> 
+         <img style="width: 21em; margin-right: 45px;" src="images/chotoivetuoitho_big.png" alt="chotoivetuoitho_big"> 
+         <img style="width: 23em;margin-right: 45px;" src="images/muonkiepnhansinh_big.png" alt="muonkiepnhansinh_big"> 
+         <img style="width: 21em;" src="images/imlangbaycuu_big.png" alt="imlangbaycuu_big"> 
+         <div style="margin-left: 9em;">
+
+           <span style="margin-right: 17em;" > <a class="span_background" href="">Horror</a></span>
+           <span style="margin-right: 18em;"> <a class="span_background" href="">Novel</a></span>
+           <span style="margin-right: 17em;"> <a class="span_background" href="">Self-help</a></span>
+           <span style="margin-right: 19em;"> <a class="span_background" href="">Children's</a></span>
+           <span><a class="span_background" href="">Self-help</a></span>
+
+         </div>
+         <h3 style="display: block; margin-top: 90px; margin-left: 40px; font-weight: 800; font-size: 25px;">Reading Radar</h3>
+         <h5 class="title-read"> “Cây Cam Ngọt Của Tôi” của José Mauro de Vasconcelos:  Khi <br> Một Tuổi Thơ Chua Xót Nhưng Chân Thực</h5>
+         <p class="p-read">Cuộc sống khốn khó, khó khăn và nghèo khổ của một thị trấn nhỏ. Cuộc sống đói nghèo đó đã khiến những thành viên trong <br> gia đình mất đi nhân tính của họ và, tệ hơn, điều này đã hại chết thế giới trẻ thơ của cậu bé Zezé...</p>
+         <img style="margin-left: 90em; margin-top: -12em; width: 20em;" src="images/caycamngotcuatoi_small.png" alt="caycamngotcuatoi_small">
+         <h5 class="title-read">"Thiên Tài Bên Trái, Kẻ Điên Bên Phải" của Cao Minh: Nếu Có 1 <br> Ngày Anh Nghĩ Rằng Tôi Điên, Có Thể Chính Anh Mới Là Kẻ Điên Đấy</h5>
+         <p class="p-read">Liệu người không đúng có phải là chính tác giả, những người được xem là bình thường?
+          Liệu họ có đúng là bệnh nhân tâm thần không? Ở vài <br> cuộc phỏng vấn với bệnh nhân tâm thần, tác giả đặt câu hỏi để dẫn dắt câu chuyện. Nhưng cuối cùng, hóa ra người bị dẫn dắt là tác giả, kẻ đi <br> săn bỗng chốc hóa thành con mồi...</p>
+         <img style="margin-left: 90em; margin-top: -12em; width: 20em;" src="images/thientaikedien_small.png" alt="thientaikedien_small">
+         <h5 class="title-read">"Cho Tôi Xin Một Vé Đi Tuổi Thơ" của Nguyễn Nhật Ánh: Chuyến <br> Tàu Mà Ai Cũng Muốn Đi Nhưng Không Muốn Trở Lại</h5>
+         <p class="p-read">Cuộc sống hiện tại như một khuôn thép cho dù đó là trẻ con hay người lớn, nó giống như một chương trình được vạch sẵn và chúng ta <br> chỉ làm theo hướng dẫn mà thôi. Đặc biệt là trẻ con hiện tại, chúng không còn được chơi đùa thỏa thích hay làm những điều mình muốn <br> nữa mặc dù chúng còn là những đứa trẻ 3-4 tuổi.</p>
+         <img style="margin-left: 90em; margin-top: -12em; width: 20em;"src="images/chotoivetuoitho_small.png" alt="chotoivetuoitho_small">
+         <h5 class="title-read">"Muôn Kiếp Nhân Sinh" của Nguyên Phong: Sống Chậm Lại Một <br> Chút và Chiêm Nghiệm</h5>
+         <p class="p-read">Sách cũng lí giải vì sao cùng sinh ra trong 1 gia đình, cùng lớn lên trong 1 môi trường nhưng mỗi chúng ta lại có những tính cách khác nhau. <br> Đó là vì chúng ta có những tiền kiếp khác nhau. Chúng ta có thể sinh ra trong nhiều hình hài khác nhau nhưng chúng ta đều mong muốn <br> học được bài học của Vũ trụ khi tới cuộc sống này. Mọi việc xảy ra ở kiếp này đều là kết quả của những hành động xảy ra ở nhiều kiếp trước. <br>Con người có thể vì sân si hiện tại mà đánh mất sự tu tâm tích đức của nhiều kiếp trước...</p>
+         <img style="margin-left: 90em; margin-top: -14em; width: 20em;" src="images/muonkiepnhansinh_small.png" alt="muonkiepnhansinh_small">
+         <h5 class="title-read">“Sự Im Lặng Của Bầy Cừu” của Thomas Harris:  Liệu Có Phải Là Đỉnh <br> Cao Về Trinh Thám Tâm Lý Tội Phạm? </h5>
+         <p class="p-read">Cốt truyện chính của tác phẩm xoay quanh ba nhân vật chính là Clarice Starling - một nữ nhân viên duy nhất trong ban tập sự FBI, Hannibal <br>Lector - một bác sĩ tâm lý, một đầu bếp cừ khôi bị biến chất thành một kẻ thiên tài xấu xa, một kẻ bạo lực đáng sợ có sở thích quái dị là ăn thịt người...</p>
+         <img style="margin-left: 90em; margin-top: -12em; width: 20em;" src="images/imlangbaycuu_small.png" alt="imlangbaycuu_small">
+    </div>
+   
+        <script>
+         function openCity(evt, cityName) {
+           var i, tabcontentLab, tablinksLab;
+           tabcontentLab = document.getElementsByClassName("tabcontentLab");
+           for (i = 0; i < tabcontentLab.length; i++) {
+             tabcontentLab[i].style.display = "none";
+           }
+           tablinksLab = document.getElementsByClassName("tablinksLab");
+           for (i = 0; i < tablinksLab.length; i++) {
+             tablinksLab[i].className = tablinksLab[i].className.replace(" active", "");
+           }
+           document.getElementById(cityName).style.display = "block";
+           evt.currentTarget.className += " active";
+         }
+         
+         // Get the element with id="defaultOpen" and click on it
+         document.getElementById("defaultOpen").click();
+         </script>
+         <script>
+           document.getElementById('download-btn').addEventListener('click', function() {
+               var imageLink = document.getElementById('imageLink');
+               var imageSrc = imageLink.getAttribute('href');
+               var imageName = "thiet_ke_tren_html_lab3_ex1.png"; // Đặt tên file khi tai về
+   
+               var link = document.createElement('a');
+               link.href = imageSrc;
+               link.download = imageName;
+               document.body.appendChild(link);
+               link.click();
+               document.body.removeChild(link);
+           });
+         </script>
+
+   
+      </div>
+
+    </body>
+</html>

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UFT-8">
+      <title>Hoàng Như Lan - My Website</title>
+      <meta name="description" content="">
+      <meta name="author" content="">
+   
+      <!-- Mobile Specific Metas
+      ================================================== -->
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   
+      <!-- CSS
+       ================================================== -->
+      <link rel="stylesheet" href="css/default.css">
+      <link rel="stylesheet" href="css/layout.css">
+      <link rel="stylesheet" href="css/media-queries.css">
+      <link rel="stylesheet" href="css/magnific-popup.css">
+   
+       <!-- library font, icon -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;0,800;1,800&display=swap" rel="stylesheet">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <!-- Script
+      ================================================== -->
+      <script src="js/modernizr.js"></script>
+   
+      <!-- Favicons
+      ================================================== -->
+      <link rel="shortcut icon" href="images/logo-personal.png" >
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+
+    <body>
+         <nav id="nav-wrap">
+  
+           <a class="mobile-btn" href="#nav-wrap" title="Show navigation"></a>
+           <a class="mobile-btn" href="#" title="Hide navigation"></a>
+          <div id="navbarSupportedContent"  class="collapse navbar-collapse" >
+              <ul style="background-color: #2c292d;" id="navbar-nav" class="navbar-nav">
+                  <li style="background-color: rgb(41, 40, 40);" class="nav-item active">
+                     <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <div class="dropdown">
+                       <button  style="background-color:#F06000;" class="dropbtn">LAB3<span class="sr-only">(current)</span> 
+                         <i class="fa fa-caret-down"></i>
+                       </button>
+                       <div class="dropdown-content">
+                         <a style="padding: 10px 0px 10px 5px; "  href="ex1.html">Ex1</a>
+                         <a style="padding: 10px 0px 10px 5px;" href="ex2.html">Ex2</a>
+                       </div>
+                     </div> 
+                 </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="lab4.html">Lab4</a></li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="contact.html">Contact</a></li>
+              </ul>
+
+           </div>
+        </nav>
+      <!-- lab4 -->
+         
+      <div style= "margin-top: 2.4%; background-color: white;">
+         <!-- Tab links -->
+         <h2 style="text-align: center; font-family:'Open Sans', sans-serif; color: brown; margin-top: 2em;" >EX2</h2>
+         <div class="tabLab">
+            <button style="color: black; font-family:'Open Sans', sans-serif;" class="tablinksLab" onclick="openCity(event, 'Design')" id="defaultOpen">Design</button>
+            <button style="color: black; font-family:'Open Sans', sans-serif;" class="tablinksLab" onclick="openCity(event, 'Implement')">Implement</button>
+         </div>
+         
+         <!-- Tab content -->
+    
+        <div id="Design" class="tabcontentLab">
+         <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+          <a id="imageLink" href="images/thietkebaiex2_lab3.png">Màn hình đã thiết kế trên HTML</a>
+          <button id="download-btn"> <i class="fa-solid fa-download"></i></button>
+          <button> <a style="text-decoration: none; color: white; font-family:'Open Sans', sans-serif;" href="https://www.figma.com/file/29m72PqTUAza8s6uHGMWNd/Untitled?type=design&node-id=0%3A1&mode=design&t=njzFlsh3Z1rOaJH9-1">Go to Figma</a></button>
+        </div>
+    
+        <div id="Implement" class="tabcontentLab">
+         <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+         <img style="display: block; width: 14em; height: 10em; margin-left: 40px;" src="images/logo_ex1.png" alt="">
+         <button id="btn_signup-ex1">Sign up free</button>
+         <button id="btn_login-ex1">Login</button>
+         <div>
+             <div class="dropdown1">
+                 <button style="display: block; color: black; margin-top: -30px; margin-left: 17em; font-size: 17px;" class="dropbtn1">Book Genres
+                   <i class="fa fa-caret-down"></i>
+                 </button>
+                 <div class="dropdown1-content"> 
+                   <div class="row">
+                     <div class="column">
+                       <a href="#">Adventure</a>
+                       <a href="#">Fanfiction</a>
+                       <a href="#">Horror</a>
+                       <a href="#">Non-Fiction</a>
+                     </div>
+                     <div class="column">
+                       <a href="#">Mystery</a>
+                       <a href="#">Fantasy</a>
+                       <a href="#">Humor</a>
+                       <a href="#">LGBTQ+</a>
+                     </div>
+                     <div class="column">
+                       <a href="#">New Adult</a>
+                       <a href="#">Poetry</a>
+                       <a href="#">Science Fiction</a>
+                       <a href="#">Short Story</a>
+                     </div>
+                 </div>
+             </div>
+         </div>
+         <div style="display: block; margin-top: -60px; margin-left: 10px;">
+
+             <div class="dropdown2">
+                 <button style="display: block; color: black;margin-top: -250px; margin-left: 1em; font-size: 17px; background-color:white;" onclick="myFunction()" class="dropbtn2">Comunity
+                    <i class="fa fa-caret-down"></i></button>
+                  <div id="myDropdown" class="dropdown2-content">
+                     <a style="padding: 10px 0px 10px 5px; " href="#">The Watty Awards</a>
+                     <a style="padding: 10px 0px 10px 5px;" href="#">Community Happenings</a>
+                     <a style="padding: 10px 0px 10px 5px; " href="#">Comic Ambassadors</a>
+                  </div>
+          </div> 
+    
+              <a style=" display: block; margin-left: 37em; margin-top: -234px; font-size: 17px" href="#" class="openBtn" onclick="openSearch()"> Search </a>
+             <a style=" display: block; margin-left: 43em; margin-top: -30px; font-size: 17px" href="#" class="helpBtn">Help</a>
+
+             <div id="myOverlay" class="overlay">
+                <span class="closebtn" onclick="closeSearch()" title="Close Overlay">x</span>
+                <div class="overlay-content">
+                  <form action="/action_page.php">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                  </form>
+                </div>
+            </div>
+         </div>
+
+         <div style="display: block; margin-left: 20em; " class="slideshow-container">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 4</div>
+              <img class="imagine" src="images/boat.png" style="width: 100%;">
+              <h2 style=" display:block; margin-top: -480px; margin-left: 170px; font-size: 50px; font-weight: 800; color: black;">Premium Picks</h2>
+              <h3 style=" display:block; margin-top: 25px; margin-left: 270px; font-size: 35px; font-weight: 400; color: black;">Bonus Bundle</h3>
+              <p style=" display:block; margin-top: 30px; margin-left: 130px; font-size: 25px; font-weight: 300; color: black;">Get 3 extra Comics Originals for</p>
+              <div style="margin-top: -90px; display: block;">
+                  <button style=" background-color: white; border-radius: 50%; margin-left: 21em; font-size: 25px; width: 110px; height: 100px; color: black; font-weight: 900; text-align: center;"> <i>FREE</i></button>
+              </div>
+
+              <div style="margin-top: 50px; margin-left:90px ; display: block;">
+                <button style=" background-color: rgb(255, 199, 0); border-radius: 10px; width: 200px; height: 60px; font-size: 25px; color: black; font-weight: 900; text-align: center;"> PREMIUM</button>
+              </div>
+
+              <div style="margin-top: -80px; display: block; margin-left: 27em;">
+                <button style=" background-color: rgb(115, 90, 4); border-radius: 10px; width: 200px; height: 60px; font-size: 25px; color: black; font-weight: 900; text-align: center;"> PREMIUM+</button>
+              </div>
+
+              <div style="margin-top: -80px; display: block; margin-left: 76em;">
+                <button id="contact_ex2"> CONTACT US</button>
+              </div>
+              
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 4</div>
+              <img class="imagine" src="images/caycamngotcuatoi_big.png" style="width:100%">
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 4</div>
+              <img class="imagine" src="images/muonkiepnhansinh_big.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">4 / 4</div>
+              <img class="imagine" src="images/imlangbaycuu_big.png" style="width:100%">
+            </div>
+          
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          </div>
+
+            <!-- The dots/circles -->
+            <div style="display: block; margin-left: 60em; margin-top: 10em;">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+         <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+
+         </div>
+         <button style="margin-top: 10px; background-color: white ;"></button>
+    </div>
+   
+        <script>
+         function openCity(evt, cityName) {
+           var i, tabcontentLab, tablinksLab;
+           tabcontentLab = document.getElementsByClassName("tabcontentLab");
+           for (i = 0; i < tabcontentLab.length; i++) {
+             tabcontentLab[i].style.display = "none";
+           }
+           tablinksLab = document.getElementsByClassName("tablinksLab");
+           for (i = 0; i < tablinksLab.length; i++) {
+             tablinksLab[i].className = tablinksLab[i].className.replace(" active", "");
+           }
+           document.getElementById(cityName).style.display = "block";
+           evt.currentTarget.className += " active";
+         }
+         
+         // Get the element with id="defaultOpen" and click on it
+         document.getElementById("defaultOpen").click();
+         </script>
+         <!-- download  -->
+         <script>
+           document.getElementById('download-btn').addEventListener('click', function() {
+               var imageLink = document.getElementById('imageLink');
+               var imageSrc = imageLink.getAttribute('href');
+               var imageName = "thiet_ke_tren_html_lab3_ex2.png"; // Đặt tên file khi tai về
+   
+               var link = document.createElement('a');
+               link.href = imageSrc;
+               link.download = imageName;
+               document.body.appendChild(link);
+               link.click();
+               document.body.removeChild(link);
+           });
+         </script>
+         <script>
+            /* When the user clicks on the button, 
+            toggle between hiding and showing the dropdown content */
+            function myFunction() {
+              document.getElementById("myDropdown").classList.toggle("show");
+            }
+            
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(event) {
+              if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                  }
+                }
+              }
+            }
+            </script>
+            <!-- search  -->
+            <script>
+                function openSearch() {
+                  document.getElementById("myOverlay").style.display = "block";
+                }
+                
+                function closeSearch() {
+                  document.getElementById("myOverlay").style.display = "none";
+                }
+                </script>
+
+   
+      </div>
+
+    </body>
+</html>
