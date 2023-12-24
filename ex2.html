@@ -48,7 +48,7 @@
                   </li>
                   <li class="nav-item">
                     <div class="dropdown">
-                       <button  style="background-color:#F06000;" class="dropbtn">LAB3<span class="sr-only">(current)</span> 
+                       <button  style="background-color:#F06000;" class="dropbtn">LAB6<span class="sr-only">(current)</span> 
                          <i class="fa fa-caret-down"></i>
                        </button>
                        <div class="dropdown-content">
@@ -79,6 +79,8 @@
     
         <div id="Design" class="tabcontentLab">
          <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+         <a id="imageLink1" href="images/thietketrtengiaylab6ex2.jpg">Thiết kế trên giấy</a> <br>
+         <button id="download-btn1"> <i class="fa-solid fa-download"></i></button>
           <a id="imageLink" href="images/thietkebaiex2_lab3.png">Màn hình đã thiết kế trên HTML</a>
           <button id="download-btn"> <i class="fa-solid fa-download"></i></button>
           <button> <a style="text-decoration: none; color: white; font-family:'Open Sans', sans-serif;" href="https://www.figma.com/file/29m72PqTUAza8s6uHGMWNd/Untitled?type=design&node-id=0%3A1&mode=design&t=njzFlsh3Z1rOaJH9-1">Go to Figma</a></button>
@@ -248,12 +250,28 @@
          // Get the element with id="defaultOpen" and click on it
          document.getElementById("defaultOpen").click();
          </script>
-         <!-- download  -->
+        <script>
+          // chức năng nút download số 1
+   document.getElementById('download-btn1').addEventListener('click', function() {
+               var imageLink = document.getElementById('imageLink1');
+               var imageSrc = imageLink.getAttribute('href');
+               var imageName = "thiet_ke_tren_giay_lab6_ex1.png"; // Đặt tên file khi tải về
+   
+               var link = document.createElement('a');
+               link.href = imageSrc;
+               link.download = imageName;
+               document.body.appendChild(link);
+               link.click();
+               document.body.removeChild(link);
+           });
+        </script>
+
+         <!-- download SO 2  -->
          <script>
            document.getElementById('download-btn').addEventListener('click', function() {
                var imageLink = document.getElementById('imageLink');
                var imageSrc = imageLink.getAttribute('href');
-               var imageName = "thiet_ke_tren_html_lab3_ex2.png"; // Đặt tên file khi tai về
+               var imageName = "thiet_ke_tren_html_lab6_ex2.png"; // Đặt tên file khi tai về
    
                var link = document.createElement('a');
                link.href = imageSrc;
