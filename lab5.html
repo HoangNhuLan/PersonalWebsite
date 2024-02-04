@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UFT-8">
+      <title>Hoàng Như Lan - My Website</title>
+      <meta name="description" content="">
+      <meta name="author" content="">
+   
+      <!-- Mobile Specific Metas
+      ================================================== -->
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   
+      <!-- CSS
+       ================================================== -->
+      <link rel="stylesheet" href="css/default.css">
+      <link rel="stylesheet" href="css/layout.css">
+      <link rel="stylesheet" href="css/media-queries.css">
+      <link rel="stylesheet" href="css/magnific-popup.css">
+   
+       <!-- library font, icon -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;0,800;1,800&display=swap" rel="stylesheet">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <!-- Script
+      ================================================== -->
+      <script src="js/modernizr.js"></script>
+   
+      <!-- Favicons
+      ================================================== -->
+      <link rel="shortcut icon" href="images/logo-personal.png" >
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    
+
+    <body>
+         <nav id="nav-wrap">
+  
+           <a class="mobile-btn" href="#nav-wrap" title="Show navigation"></a>
+           <a class="mobile-btn" href="#" title="Hide navigation"></a>
+          <div id="navbarSupportedContent"  class="collapse navbar-collapse" >
+              <ul  style="background-color: #2c292d;" id="navbar-nav" class="navbar-nav">
+                  <li style="background-color: rgb(41, 40, 40);" class="nav-item active">
+                     <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="lab4.html">Lab4</a></li>
+                  <li class="nav-item">
+                     <a style="background-color:#F06000" class="nav-link" href="lab5.html">Lab5 <span class="sr-only">(current)</span> </a></li>
+                  <li class="nav-item">
+                    <div class="dropdown">
+                       <button class="dropbtn">LAB6
+                         <i class="fa fa-caret-down"></i>
+                       </button>
+                       <div class="dropdown-content">
+                         <a style="padding: 10px 0px 10px 5px; "  href="ex1.html">Ex1</a>
+                         <a style="padding: 10px 0px 10px 5px;" href="ex2.html">Ex2</a>
+                       </div>
+                     </div> 
+                 </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="lab7.html">Lab7</a></li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="contact.html">Contact</a></li>
+              </ul>
+
+           </div>
+        </nav>
+      <!-- lab4 -->
+         
+      <div id="background-content"></div>
+    <div>
+        <div id="menu">
+            <ul>
+                <li><a href="">Trang chủ</a></li>
+                <li><a style="color: rgb(98, 98, 99);" href="">Đặt bàn</a></li>
+                <li><a href="">Nhà hàng uy tín</a></li>
+                <li><a href="">Ưu đãi hot</a></li>
+                <li><a href="">Mới nhất</a></li>
+            </ul>
+        </div>
+        <div style="display: block; margin-left: 20em; " class="slideshow-container">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 4</div>
+              <img class="imagine" src="/images/dookki.png" style="width: 100%;">
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 4</div>
+              <img class="imagine" src="images/cheese_dookki.png" style="width:100%">
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 4</div>
+              <img class="imagine" src="images/cheese2_dookki.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">4 / 4</div>
+              <img class="imagine" src="images/meal.png" style="width:100%">
+            </div>
+          
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          </div>
+
+            <!-- The dots/circles -->
+            <div style="display: block; margin-left: 60em; margin-top: 1em;">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+         <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+            <div class="content">
+                <h4> Dookki Vietnam - Chi nhánh Vincom Thủ Đức</h4>
+                <p class="line-1">Buffet món hàn - Gia đình, hội nhóm,...</p>
+                <p class="line-2">Địa chỉ: Tầng 4, 216 Võ Văn Ngân, Thủ Đức, TP.HCM</p>
+                <i class="fa-solid fa-clock fa-2x" style="display: block; color: #f5f5f5; margin-left: 310px; display: block; margin-top: -20px; "></i>
+                <p class="line-3">Đang mở cửa</p>s
+                <span>11:00 - 22:00</span>
+                <i class="fa-solid fa-tag fa-2x" style="display: block; color: #ffffff; margin-left: 310px; margin-top: 20px;"></i>
+                <p class="line-4">139.000 đồng / người lớn</p>
+                <p class="line-5">69.000 đồng / trẻ em</p>
+                <p class="line-6">Lưu ý: Giá vé chưa bao gồm VAT</p>
+            </div>
+          <br>
+          
+            <div class="background2-content"></div>
+            <div class="content2">
+                <p class="line-7"> <i> Thông tin đặt chỗ nhà hàng Dookki - Vincom Thủ Đức</i></p>
+                <div class="tag-content">
+                    <p style="font-size: 18px;"><i class="fa-solid fa-circle" style="color: #ffffff; margin-right: 10px;"></i>Quý khách vui lòng đặt chỗ trước ít nhất 45 phút để được phục vụ tốt nhất</p>
+                    <p style="font-size: 18px;"><i class="fa-solid fa-circle" style="color: #ffffff;margin-right: 10px;"></i>Bàn đặt của quý khách được giữ tối đa 20 phút</p>
+                    <p style="font-size: 18px;"><i class="fa-solid fa-circle" style="color: #ffffff;margin-right: 10px;"></i>Nhà hàng quy định không mang đồ ăn, thức uống từ ngoài vào</p>
+                    <p style="font-size: 18px;"><i class="fa-solid fa-circle" style="color: #ffffff;margin-right: 10px;"></i>Dooki nhận đặt số lượng lớn từ 15 khách trở lên</p>
+                </div>
+                <i class="fa-solid fa-phone fa-4x" style="display: block; color: rgb(169, 7, 7); margin-left: 5em; margin-top: 30px;"></i>
+                <button class="btn-call">Gọi điện đặt bàn số lượng lớn!</button>
+            </div>
+            <form class="background-form">
+              <h3 style="display: inline-block;margin-left: 39%; margin-top: 30px; font-size: 30px; color: white;">Đặt chỗ</h3>
+              <p style="text-align: center; margin-top: -20px; color:  rgb(17, 255, 55);">Đặt bàn giữ chỗ</p>
+              <i class="fa-solid fa-user fa-2x " style="color: #ffffff; margin-left: 40px; margin-top: 20px;"></i>
+              <label for="adult" style="color: white; margin-left: 10px; font-size: 20px;">Người lớn:</label>
+              <select name="sAdult" id="txtSoNguoiLon" style="width: 45%; height: 40px; margin-left: 5px;">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option> 
+              </select>
+              <br>
+              <i class="fa-solid fa-baby fa-3x" style=" color: #ffffff; margin-top: 30px; margin-left: 35px; "></i>
+              <label for="adult" style="color: white; margin-left: 10px; font-size: 20px;">Trẻ em:</label>
+              <select name="sAdult" id="txtSoNguoiLon" style="width: 45%; height: 40px; margin-left: 20px;">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+              </select>
+              <br>
+              <i class="fa-solid fa-clock fa-2x" style="color: #ffffff; margin-left: 40px; margin-top: 30px;"></i>
+              <label for="adult" style="color: white; margin-left: 10px; font-size: 20px;">Thời gian đến:</label> <br>
+              <input type="date" id="txtNgayDen" name="sDate" style="width: 45%; height: 40px; margin-left: 40px; margin-top: 20px;">
+              <input type="time" id="txtNgayDen" name="sTime" style="width: 45%; height: 40px; margin-left: 40px; margin-top: 20px;"> <br>
+              <input type="button" onclick="alert('Bạn đã tạo đơn thành công!')" value="Tạo đơn" class="btn-add">
+
+
+            </form>
+            <div style="display: block;">
+              <p style=" display: block; margin-left: 23em; margin-top: 20px; color: #ffffff; font-size: 18px;">Hình ảnh của user scenario</p>
+              <div style="display: block; background-color: white; width: 35em; height: 23.5em; margin-left: 18em; margin-top:5px;"></div>
+              <img style="display: block; width: 20em; height: 350px; margin-top: -23em; margin-left: 25em;" src="images/user_scenario.jpg" alt="hinh_anh_cua_userscenario">
+              <p style="display: block; margin-top: -23em; margin-left: 67em; color: #ffffff; font-size: 18px;">Đường dẫn của file thiết kế</p>
+              <a style="display: block; margin-top: 1em; margin-left: 67em; font-size: 18px;" href="https://www.figma.com/file/M6blYcv4yCfTdicTtDtDFQ/Untitled?type=design&node-id=0%3A1&mode=design&t=V1HRjZ4aclF3eNPD-1">Đường dẫn của file thiết kế</a>
+            </div>
+
+    </div>
+    
+
+    </body>
+    <style>
+        
+        *{
+    font-family: 'Roboto', sans-serif;
+}
+#background-content{
+    display: block;
+    background-color: rgb(52, 1, 1) ;
+    max-width: 1420px;
+    margin-left: 225px;
+    height: 135em;
+}
+#menu{
+    display: block;
+    margin-top: -1960px;
+}
+ul{
+    display: flex;
+    font-weight:700;
+    margin-left: 350px;
+    list-style-type: none;
+}
+ul li{
+    margin-left: 120px;
+}
+ul li a:hover{
+    color: rgb(98, 98, 99);
+}
+ul li a{
+    text-decoration: none;
+    color: rgb(217, 217, 217);
+}
+.imagine{
+    display: block;
+    margin-top: 20px;
+    /* width: 120px; */
+    height: 600px;
+    margin-left: 65px;
+}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1250px;
+  position: relative;
+  left: -70px;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev{
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  top: 320px;
+  width: -40px;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next{
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    left: 1337px;
+    top: 320px;
+    width: -40px;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  left: 60px;
+  top: 20px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+  /* On smaller screens, decrease text size */
+
+}
+h4{
+    color: white;
+    font-weight: 400;
+    margin-left: 310px;
+    margin-top: 10px;
+    font-size: 30px;
+}
+.line-1{
+    margin-left: 310px;
+    margin-top: -5px;
+    color: rgb(86, 80, 80);
+    font-size: 17px;
+}
+.line-2{
+    margin-left: 310px;
+    margin-top: -25px;
+    display: block;
+    color: rgb(204, 171, 171);
+    font-size: 20px;
+}
+.line-3{
+    color: rgb(17, 255, 55);
+    margin-left: 360px;
+    margin-top: -30px;
+    font-size: 20px;
+}
+.content span{
+    display: block;
+    color: rgb(255, 11, 11);
+    margin-left: 550px;
+    margin-top: -90px;
+    font-size: 20px;
+}
+.line-4{
+    margin-left: 360px;
+    margin-top: -28px;
+    font-size: 20px;
+    color: white;
+}
+.line-5{
+    margin-left: 650px;
+    margin-top: -60px;
+    font-size: 20px;
+    color: white;
+}
+.line-6{
+    margin-left: 310px;
+    margin-top: 5px;
+    font-size: 20px;
+    color: rgb(204, 171, 171);
+}
+.background2-content{
+    background-color: rgb(89, 28, 28);
+    width: 800px;
+    height: 30em;
+    margin-left: 250px;
+    border-radius: 40px;
+}
+.content2 .line-7{
+    margin-top: -400px;
+    margin-left: 330px;
+    color: white;
+    font-size: 25px;
+    font-weight: 100;
+
+}
+.content2 .tag-content {
+    margin-top: 30px;
+    margin-left: 350px;
+    color: white;
+}
+.btn-call{
+    display: block;
+    background-color: rgb(169, 7, 7);
+    font-size: 17px;
+    height: 60px;
+    width: 400px;
+    margin-left: 420px;
+    margin-top: -60px;
+    border-radius: 20px;
+}
+.btn-call:hover{
+    background-color: rgb(219, 101, 101);
+}
+.background-form{
+    background-color: rgb(143, 107, 107);
+    width: 480px;
+    height: 41em;
+    margin-left: 1090px;
+    margin-top: -590px;
+    border-radius: 15px;
+}
+.btn-add{
+    display: block;
+    margin-top: 50px;
+    margin-left: 180px;
+    height: 60px;
+    width: 160px;
+    background-color: rgb(255, 11, 11);
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 0 solid rgb(255, 11, 11);
+    font-weight: 800;
+}
+.btn-add:hover{
+    background-color: rgb(219, 101, 101);
+    color: black;
+}
+
+
+
+    </style>
+</html>
